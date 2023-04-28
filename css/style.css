@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+
+/* Templates */
+.container {
+    margin: 15px;
+    padding: 5px;
+}
+
+.button {
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(224, 75, 70);
+    color: white;
+    padding: 10px;
+}
+
+.button-large {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(244, 239, 239);
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.page {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.page2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.column label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.column input[type='text'] {
+    width: 90%;
+}
+
+.column3 {
+    width: 25%;
+}
+
+.column3 hr {
+    height: 3px;
+    background: black;
+    border: none;
+}
+
+.form {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form label {
+    display: block;
+}
+
+.form input[type='text'], input[type='email'], input[type='tel'], input[type='date'], input[type='password'] {
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid lightgrey;
+}
+
+.form textarea, input[type='time'], input[type='number'], .category-button {
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid lightgray;
+    margin-top: 5px;
+    margin-bottom: 20xp;
+}
+
+.form input[type='radio'] {
+    width: 20px;
+    height: 30px;
+}
+
+.form button {
+    font-size: 15px;
+}
+
+.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+}
+
+
+
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: black;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.search {
+    width: 30%;
+}
+
+.search-bar {
+    background-color: white;
+    border: 1px solide white;
+    border-radius: 30px;
+    width: 95%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.search-results {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    font-size: 17px;
+    width: 400px;
+    top: 10%;
+    left: 36%;
+}
+
+.search-results a {
+    display: block;
+    margin: 10px;
+}
+
+.nav-right .link-right {
+    margin-right: 30px;
+}
+
+.logged-right {
+    display: flex;
+}
+
+.logged-right .link-right {
+    margin-right: 30px;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+}
+
+.profile-dropdown a {
+    display: block;
+    margin: 20px;
+}
+
+.profile-menu:hover .profile-dropdown {
+    display: block;
+}
+
+
+
+
+/* Home Page */
+.front-page {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.all-events {
+    text-align: center;
+}
+
+.all-events button {
+    font-size: 25px;
+    width: 15%;
+}
+
+.front-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+.front-content h2 {
+    font-size: 30px;
+}
+
+.front-content p {
+    font-size: 20px;
+}
+
+
+
+
+/* Profile Page */
+.profile-page a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile-page button {
+    font-size: 13px;
+}
+
+
+
+
+/* Create Event */
+.friend-list {
+    display: none;
+}
+
+
+
+
+/* All Events */
+.filter {
+    float: left;
+    margin-right: 10px;
+}
+
+.filter label {
+    font-size: 20px;
+}
+
+.filter .filter-label, .filter-date, .filter-button {
+    display: block;
+    margin: 10px;
+}
+
+.filter-button {
+    border-radius: 30px;
+    font-size: 20px;
+    border: 2px solid lightgray;
+    margin-top: 15px;
+}
+
+
+
+
+/* Event Page */
+.event-seperator {
+    border: 1px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.event-details {
+    float: left;
+    text-align: left;
+    margin-left: 350px;
+}
+
+
+
+
+/* Payment & Billing Page */
+.payment-details {
+    float: left;
+    text-align: left;
+    margin-left: 150px;
+}
+
+
+
+
+/* Feed */
+.feed {
+    width: 50%;
+}
+
+.feed [input='text'] {
+    width: auto;
+}
+
+.feed-input {
+    margin-left: 225px;
+    width: 30%;
+}
+
+.post h2 {
+    font-size: 16px;
+    padding: 3px;
+}
+
+.post h3{
+    font-size: 20px;
+    padding: 3px;
+}
+
+.post p{
+    font-size: 13px;
+    padding: 3px;
+}
+
+.reply h2{
+    font-size: 13px;
+    padding: 3px;
+}
+
+.reply h3{
+    font-size: 15px;
+    padding: 3px;
+}
+
+.reply p{
+    font-size: 11px;
+    padding: 3px;
+}
+
+
+
+
+/* Inbox */
+.messages {
+    display: inline-block;
+}
+
+.messages input[type='text'] {
+    width: 250px;
+}

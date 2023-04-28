@@ -1,0 +1,14 @@
+{
+    "name": "se/social-events",
+    "description": "Social Events Web Application",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Henry Shiplee"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "mongodb/mongodb": "^1.15"
+    }
+}
